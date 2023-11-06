@@ -1,0 +1,30 @@
+//========================= getAllUsers =====================
+
+query getAllUsers {
+
+  users {
+    firstName
+    id
+    email
+    lastName
+    password
+  }
+}
+
+//================================== Get ALl Quotes ===========
+
+query getAllQuotes {
+  quotes {
+    name
+    by
+  }
+}
+
+// ==================================== Fetch One User ===============================
+query fetchUser($userId: ID!) {
+
+  user(id: "2") {
+    firstName
+    lastName
+  }
+}
